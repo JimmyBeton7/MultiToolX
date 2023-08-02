@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MultiToolX" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/MultiToolX" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw31u.a" />
+					<Add directory="$(#wx)/lib/gcc_dll" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/MultiToolX" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw31u.a" />
+					<Add directory="$(#wx)/lib/gcc_dll" />
+				</Linker>
+			</Target>
+			<Target title="ca">
+				<Option output="bin/ca/MultiToolX" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/ca/" />
+				<Option object_output="obj/ca/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw31u.a" />
+					<Add directory="$(#wx)/lib/gcc_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-Wall" />
+			<Add directory="$(#wx)/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(#wx)/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+		</Linker>
+		<Unit filename="Calculator.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Calculator.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="FileConverter.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="FileConverter.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="MultiToolXApp.cpp" />
+		<Unit filename="MultiToolXApp.h" />
+		<Unit filename="MultiToolXMain.cpp" />
+		<Unit filename="MultiToolXMain.h" />
+		<Unit filename="Notepad.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Notepad.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Shutdown.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Shutdown.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="wxsmith/Calculator.wxs">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxsmith/FileConverter.wxs">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxsmith/MultiToolXframe.wxs" />
+		<Unit filename="wxsmith/Notepad.wxs">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxsmith/Shutdown.wxs">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Extensions>
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="MultiToolXApp.cpp" main="MultiToolXFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/MultiToolXframe.wxs" src="MultiToolXMain.cpp" hdr="MultiToolXMain.h" fwddecl="0" i18n="1" name="MultiToolXFrame" language="CPP" />
+					<wxFrame wxs="wxsmith/Calculator.wxs" src="Calculator.cpp" hdr="Calculator.h" fwddecl="0" i18n="1" name="Calculator" language="CPP" />
+					<wxFrame wxs="wxsmith/Shutdown.wxs" src="Shutdown.cpp" hdr="Shutdown.h" fwddecl="0" i18n="1" name="Shutdown" language="CPP" />
+					<wxFrame wxs="wxsmith/FileConverter.wxs" src="FileConverter.cpp" hdr="FileConverter.h" fwddecl="0" i18n="1" name="FileConverter" language="CPP" />
+					<wxFrame wxs="wxsmith/Notepad.wxs" src="Notepad.cpp" hdr="Notepad.h" fwddecl="0" i18n="1" name="Notepad" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

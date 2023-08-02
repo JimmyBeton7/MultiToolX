@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="FileConverter">
+		<size>474,455</size>
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+			<pos>312,248</pos>
+			<size>474,480</size>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="ChosenFile_txt" member="yes">
+				<pos>16,104</pos>
+				<size>360,40</size>
+				<style>wxTE_MULTILINE|wxTE_READONLY|wxTE_WORDWRAP</style>
+			</object>
+			<object class="wxButton" name="ID_BUTTON1" variable="Select_btn" member="yes">
+				<label>Select file</label>
+				<pos>16,24</pos>
+				<size>150,50</size>
+				<handler function="OnSelect_btnClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+				<label>Selected file:</label>
+				<pos>16,80</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+				<label>File format:</label>
+				<pos>384,80</pos>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="FileFormat_txt" member="yes">
+				<pos>392,104</pos>
+				<size>65,30</size>
+				<font>
+					<size>12</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>default</family>
+					<face>Arial</face>
+				</font>
+				<style>wxTE_READONLY|wxTE_CENTRE</style>
+			</object>
+			<object class="wxButton" name="ID_BUTTON2" variable="exit_btn" member="yes">
+				<label>Exit</label>
+				<pos>304,392</pos>
+				<size>150,50</size>
+				<handler function="Onexit_btnClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticBox" name="ID_STATICBOX1" variable="StaticBox1" member="yes">
+				<label>Select the file format:</label>
+				<pos>16,160</pos>
+				<size>440,224</size>
+			</object>
+			<object class="wxRadioButton" name="ID_RADIOBUTTON1" variable="pdf_rb" member="yes">
+				<label>PDF</label>
+				<selected>1</selected>
+				<pos>40,200</pos>
+			</object>
+			<object class="wxRadioButton" name="ID_RADIOBUTTON2" variable="docx_btn" member="yes">
+				<label>DOCX</label>
+				<pos>40,240</pos>
+			</object>
+			<object class="wxRadioButton" name="ID_RADIOBUTTON3" variable="jpg_rb" member="yes">
+				<label>JPG</label>
+				<pos>256,200</pos>
+			</object>
+			<object class="wxRadioButton" name="ID_RADIOBUTTON4" variable="png_rb" member="yes">
+				<label>PNG</label>
+				<pos>256,240</pos>
+			</object>
+			<object class="wxRadioButton" name="ID_RADIOBUTTON5" variable="svg_rb" member="yes">
+				<label>SVG</label>
+				<pos>256,280</pos>
+			</object>
+			<object class="wxRadioButton" name="ID_RADIOBUTTON6" variable="txt_rb" member="yes">
+				<label>TXT</label>
+				<pos>40,280</pos>
+			</object>
+			<object class="wxRadioButton" name="ID_RADIOBUTTON7" variable="html_rb" member="yes">
+				<label>HTML</label>
+				<pos>152,200</pos>
+			</object>
+			<object class="wxRadioButton" name="ID_RADIOBUTTON8" variable="odt_rb" member="yes">
+				<label>ODT</label>
+				<pos>152,240</pos>
+			</object>
+			<object class="wxRadioButton" name="ID_RADIOBUTTON9" variable="csv_rb" member="yes">
+				<label>CSV</label>
+				<pos>152,280</pos>
+			</object>
+			<object class="wxRadioButton" name="ID_RADIOBUTTON10" variable="jpeg_rb" member="yes">
+				<label>JPEG</label>
+				<pos>352,200</pos>
+			</object>
+			<object class="wxRadioButton" name="ID_RADIOBUTTON11" variable="bmp_rb" member="yes">
+				<label>BMP</label>
+				<pos>352,240</pos>
+			</object>
+			<object class="wxRadioButton" name="ID_RADIOBUTTON12" variable="ico_rb" member="yes">
+				<label>ICO</label>
+				<pos>352,280</pos>
+			</object>
+			<object class="wxButton" name="ID_BUTTON3" variable="convert_btn" member="yes">
+				<label>Convert</label>
+				<pos>32,320</pos>
+				<size>150,50</size>
+				<handler function="Onconvert_btnClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+				<label>FILE CONVENTER</label>
+				<pos>256,32</pos>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>default</family>
+					<face>Arial</face>
+				</font>
+			</object>
+		</object>
+		<object class="wxFileDialog" variable="FileDialog1" member="yes">
+			<message>Select file</message>
+			<style>wxFD_DEFAULT_STYLE|wxFD_OPEN|wxFD_FILE_MUST_EXIST</style>
+		</object>
+	</object>
+</wxsmith>

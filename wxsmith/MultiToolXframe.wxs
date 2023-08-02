@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="MultiToolXFrame">
+		<size>250,250</size>
+		<id_arg>0</id_arg>
+		<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+			<pos>184,200</pos>
+			<size>400,224</size>
+			<bg>#000000</bg>
+			<object class="wxBitmapButton" name="ID_BITMAPBUTTON1" variable="BitmapButton1" member="yes">
+				<bitmap>C:\Users\Mateusz\Desktop\MultiToolX\pictures\calc.png</bitmap>
+				<pos>16,16</pos>
+				<size>100,100</size>
+				<bg>wxSYS_COLOUR_INFOTEXT</bg>
+				<style>wxBU_AUTODRAW|wxBORDER_NONE</style>
+				<handler function="OnBitmapButton1Click" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxBitmapButton" name="ID_BITMAPBUTTON2" variable="BitmapButton2" member="yes">
+				<bitmap>C:\Users\Mateusz\Desktop\MultiToolX\pictures\shut.png</bitmap>
+				<pos>128,16</pos>
+				<size>100,100</size>
+				<bg>wxSYS_COLOUR_MENUTEXT</bg>
+				<style>wxBU_AUTODRAW|wxBORDER_NONE</style>
+				<handler function="OnBitmapButton2Click" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxBitmapButton" name="ID_BITMAPBUTTON3" variable="BitmapButton3" member="yes">
+				<bitmap>C:\Users\Mateusz\Desktop\MultiToolX\pictures\exit.png</bitmap>
+				<pos>128,128</pos>
+				<size>100,100</size>
+				<bg>wxSYS_COLOUR_INFOTEXT</bg>
+				<style>wxBU_AUTODRAW|wxBORDER_NONE</style>
+				<handler function="OnBitmapButton3Click" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxBitmapButton" name="ID_BITMAPBUTTON4" variable="BitmapButton4" member="yes">
+				<bitmap>C:\Users\Mateusz\Desktop\MultiToolX\pictures\notepad.png</bitmap>
+				<pos>16,128</pos>
+				<size>100,100</size>
+				<handler function="OnBitmapButton4Click" entry="EVT_BUTTON" />
+			</object>
+		</object>
+	</object>
+</wxsmith>
